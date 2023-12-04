@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin:10px;
+}
+header{
+    background-color: lightpink;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+header > nav > ul {
+    list-style: none;
+    display: flex;
+    gap:10px;
+}
+.banner{
+    height: 150px;
+    background-color: yellowgreen;
+    margin-bottom: 10px;
+}
+.intro-text-area{
+    background-color: wheat;
+    margin-bottom: 15px;
+}
+.boxes{
+    display:flex;
+    height: 100vh;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.box{
+    background-color: blue;
+    width: 33%;
+    
+}
+footer{
+    height: 50px;
+    background-color:brown;
+}
