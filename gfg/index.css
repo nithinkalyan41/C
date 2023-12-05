@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Source Sans 3';
+}
+body{
+ background-color: #ebebeb;
+}
+header{
+    background-color: #fff;
+    height: 50px;
+    display: flex;
+    margin-bottom: 2px;
+    
+}
+.logo{
+    display: none;
+}
+.nav > ul{
+    list-style: none;
+    display: flex;
+    padding:10px;
+    gap:20px;
+    font-weight: bold;
+}
+.logo-img{
+   margin-right: 100px;
+}
+.logo-end{
+    width:25%;
+    display: flex;
+    justify-content: flex-end;
+    gap:15px;
+    align-items: center;
+}
+.glass,.moon,.fa-language{
+   font-size: 24px;
+   color:black;
+}
+.moon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:none
+}
+.signup{
+    width: 100px;
+    height: 35px;
+    background-color: rgb(39,50,57);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.mini-logo{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid black;
+    font-size: 24px;
+    padding:20px;
+}
+.logo-img{
+   margin-right:0px;
+}
+
+.fa-chevron-down{
+    position: relative;
+    top:3px;
+    margin-left: 2px;
+}
+.side-navbar{
+    background-color: #fff;
+    width: 280px;
+    line-height: 50px;
+    overflow: scroll;
+}
+.side-navbar .links{
+    height: 60px;
+    text-align: left;
+    font-size: medium;
+    border-bottom: 1px solid#ebebeb;
+    padding-left:20px
+}
+.links-button{
+    display: flex;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+}
+.sign-button{
+    height: 45px;
+    font-size: large;
+    width: 80%;
+    border: none;
+    color: #fff;
+    background-color: rgb(39,50,57) ;
+}
+.moon-button{
+    font-size: 20px;
+    padding: 10px;
+    width: 50px;
+    height: 40px;
+}
+@media screen and (min-width:1024px){
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:15px;
+    }
+    .mini-logo{
+        display: none;
+    }
+}
+
