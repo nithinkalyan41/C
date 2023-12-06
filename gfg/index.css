@@ -63,6 +63,9 @@ header{
     font-size: 24px;
     padding:20px;
 }
+.bars:hover{
+    cursor: pointer;
+}
 .logo-img{
    margin-right:0px;
 }
@@ -76,7 +79,10 @@ header{
     background-color: #fff;
     width: 280px;
     line-height: 50px;
-    overflow: scroll;
+    position:fixed;
+    display: none;
+    height: 100%;
+    overflow: auto;
 }
 .side-navbar .links{
     height: 60px;
@@ -101,10 +107,62 @@ header{
 }
 .moon-button{
     font-size: 20px;
-    padding: 10px;
-    width: 50px;
-    height: 40px;
+    width: 20%;
+    height: 42px;
+    border:1px solid#ebebeb;
+    background-color: #fff;
 }
+.lang-button{
+    width: 60%;
+    height: 42px;
+    border:1px solid#ebebeb;
+    background-color: #fff;
+}
+.links .fa-chevron-down{
+ float: right;
+ margin: 15px 10px 0 0;
+}
+
+#checks:checked ~ .fa-bars{
+    display: none;
+}
+#checks:checked ~ .fa-x{
+    display: inline-block;
+}
+#checks:not(:checked)~.fa-x{
+    display: none;
+}
+.last{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: 15px;
+}
+.left-arrow,.right-arrow{
+    font-size: 24px;
+    position:relative;
+}
+.sub-head{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.sub-head > ul{
+    /* display: flex;
+    flex-direction: row; */
+    list-style: none;
+    width: fit-content;
+    /* overflow: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth; */
+    padding:8px;
+    gap:10px;
+}
+.sub-head > ul > li{
+    display: inline-block;
+}
+
 @media screen and (min-width:1024px){
     .logo{
         width: 100%;
@@ -116,5 +174,6 @@ header{
     .mini-logo{
         display: none;
     }
+
 }
 
