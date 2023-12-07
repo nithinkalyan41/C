@@ -1,0 +1,47 @@
+.container{
+    padding: 100px;
+    
+
+}
+body{
+    background-color: black;
+}
+.circle{
+    width:25px;
+    height:25px;
+    background-color: yellow;
+    border-radius: 50%;
+    position:absolute;
+    top:145px;
+    z-index: 1;
+    left:148px;
+}
+.triangle{
+    height: 100px;
+    width:100px;
+    clip-path: polygon(13% 37%, 57% 45%, 18% 57%, 0% 100%);
+    background-color: red;
+    transition: all 10s ease-in;
+    position:fixed;
+}
+.triangle-2{
+    transform: rotate(90deg);
+}
+.triangle-3{
+    transform: rotate(180deg);
+}
+.triangle-4{
+    transform: rotate(270deg);
+}
+.fan:hover .triangle{
+    transform: rotate(8turn);
+}
+.pipe{
+    height: 200px;
+    background-color: #fff;
+    width: 15px;
+    position: relative;
+    left:45px;
+    top:50px;
+    z-index: -2;
+}
