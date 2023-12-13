@@ -21,6 +21,19 @@ aside {
   padding: 50px 0 0 50px;
   width: 500px;
 }
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+h2::after {
+  content: "Top";
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+}
 
 h1,
 h2,
@@ -107,4 +120,12 @@ a:active {
 ul,
 ol {
   margin-left: 50px;
+}
+.post-img {
+  width: 100%;
+  height: auto;
+}
+.container {
+  width: 700px;
+  margin: 0 auto;
 }
