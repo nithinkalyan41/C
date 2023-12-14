@@ -44,7 +44,6 @@ li {
 .tag {
   font-size: 12px;
   font-weight: bold;
-  margin-bottom: 0;
 }
 .add-cart {
   background-color: black;
@@ -66,4 +65,43 @@ a:visited {
 .container {
   width: 800px;
   margin: 0 auto;
+}
+h2::after {
+  content: "SALE";
+  background-color: red;
+  border: 1px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  padding: 5px 10px;
+  font-size: 10px;
+}
+.colors {
+  margin: 20px 0 20px 0;
+}
+.color {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 3px;
+}
+.color-black {
+  background-color: black;
+}
+.color-blue {
+  background-color: blue;
+}
+.color-red {
+  background-color: red;
+}
+.color-yellow {
+  background-color: yellow;
+}
+.color-green {
+  background-color: greenyellow;
+}
+
+.color-brown {
+  background-color: brown;
 }

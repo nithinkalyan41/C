@@ -25,6 +25,9 @@ h1::first-letter {
   font-style: normal;
   margin-right: 5px;
 }
+h2 {
+  position: relative;
+}
 h2::after {
   content: "Top";
   background-color: #ffe70e;
@@ -33,6 +36,8 @@ h2::after {
   display: inline-block;
   padding: 5px 10px;
   position: absolute;
+  top: 0;
+  right: 25px;
 }
 
 h1,
