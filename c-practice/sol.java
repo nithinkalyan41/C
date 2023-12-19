@@ -1,30 +1,27 @@
- public class sol{
+import java.util.PriorityQueue;
+
+public class sol{
+  public static int minCost(int[] array) {
+    PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+    for (int num : array) {
+        minHeap.add(num);
+    }
+
+    int totalCost = 0;
+    while (minHeap.size() > 1) {
+        int firstMin = minHeap.poll();
+        int secondMin = minHeap.poll();
+        int cost = firstMin + secondMin;
+        totalCost += cost;
+        minHeap.add(cost);
+    }
+
+    return totalCost;
+}
   public static void main(String[] args) {
-   int a[] = {2, 5, 8, 12, 16, 23, 38, 56, 72, 91};
-     
-     int start = 0;
-     int end = a.length-1;
-
-    int target = 10;
-   //  0                                n-1
-
-
-   while(start <= end){
-     
-        int middile = (start+end)/2; 
-         
-        if(a[middile]==target){
-          System.out.println(true);
-          break;
-        }
-        else if(a[middile] > target){
-          end = middile-1;
-        }
-        else{
-          start = middile+1;
-        }
+    int[] array = {100,1};
+        int result = minCost(array);
+        System.out.println("Minimum cost to reduce the array: " + result);
    }
-   
- 
-  }
+  
 }
